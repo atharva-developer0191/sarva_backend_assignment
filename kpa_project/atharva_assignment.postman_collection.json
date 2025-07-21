@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "6fd4be8d-399d-4336-b806-2f8aba9dbc19",
+		"name": "atharva_flutter_assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46914404",
+		"_collection_link": "https://atharva-5293897.postman.co/workspace/Atharva's-Workspace~29cc1b63-6f0b-459d-8678-9cba306dc9e8/collection/46914404-6fd4be8d-399d-4336-b806-2f8aba9dbc19?action=share&source=collection_link&creator=46914404"
+	},
+	"item": [
+		{
+			"name": "http://192.168.43.132:8000/api/wheel-specification/submit/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tread_diameter\": \"920\",\r\n  \"last_shop_issue\": \"2023-11-10\",\r\n  \"condemning_dia\": \"845\",\r\n  \"wheel_gauge\": \"1676\",\r\n  \"axle_box_housing_bore_dia\": \"210\",\r\n  \"wheel_disc_width\": \"130\",\r\n  \"intermediate_wwp\": \"35\",\r\n  \"bearing_seat_diameter\": \"140\",\r\n  \"roller_bearing_outer_dia\": \"200\",\r\n  \"roller_bearing_bore_dia\": \"100\",\r\n  \"roller_bearing_width\": \"45\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.43.132:8000/api/wheel-specification/submit/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"132"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"wheel-specification",
+						"submit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.43.132:8000/api/wheel-specification/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.43.132:8000/api/wheel-specification/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"132"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"wheel-specification",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.43.132:8000/api/bogie-checksheet/submit/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bogie_no\": \"B123456\",\r\n  \"maker_year_built\": \"ICF 2020\",\r\n  \"incoming_div_date\": \"2024-12-15T00:00:00Z\",\r\n  \"deficit_components\": \"Brake system, Spring\",\r\n  \"date_of_ioh\": \"2025-01-10T00:00:00Z\",\r\n\r\n  \"bogie_frame_condition\": \"Good\",\r\n  \"bolster\": \"Replaced\",\r\n  \"bolster_suspension_bracket\": \"OK\",\r\n  \"lower_spring_seat\": \"Worn out\",\r\n  \"axle_guide\": \"Repaired\",\r\n  \"axle_guide_assembly\": \"Intact\",\r\n  \"protective_tubes\": \"Missing\",\r\n  \"anchor_links\": \"Broken\",\r\n  \"side_bearer\": \"New\",\r\n\r\n  \"cylinder_body_dome_cover\": \"OK\",\r\n  \"piston_trunnion_body\": \"Replaced\",\r\n  \"adjusting_tube_screw\": \"Loose\",\r\n  \"plunger_spring\": \"Replaced\",\r\n  \"tee_bolt_hex_nut\": \"OK\",\r\n  \"pawl_pawl_spring\": \"Broken\",\r\n  \"dust_excluder\": \"Clogged\"\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.43.132:8000/api/bogie-checksheet/submit/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"132"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bogie-checksheet",
+						"submit",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
